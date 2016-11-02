@@ -1,0 +1,9 @@
+#  code2040 ‘16 tech. assessment step 1, Registration
+
+import requests
+
+registration_json = {'token': 'b0a129304321ea101d3ca62b837f9f94', 'github': 'https://github.com/Franchize/Code2040’}
+
+response = requests.post("http://challenge.code2040.org/api/register", data = registration_json)
+
+print response.status_code
